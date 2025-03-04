@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://png.pngtree.com/background/20230610/original/pngtree-restaurants-restaurant-menu-mockup-picture-image_3072506.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+input {
+    padding: 10px;
+    width: 80%;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+button {
+    padding: 10px;
+    background: #ff5722;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
+.recipe-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+.recipe-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, opacity 0.3s ease-in;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+.recipe-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    display: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+.popup h2 {
+    margin-top: 0;
+}
+.popup ul {
+    text-align: left;
+}
+.close-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.favorites {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 800px;
+}
