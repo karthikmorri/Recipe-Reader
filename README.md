@@ -1,7 +1,7 @@
 # Recipe Reader 
 
 # Description  
-Recipe Ideas is a simple yet visually appealing recipe search application built using **JavaScript, HTML, and CSS**. It fetches recipes from the **MealDB API**, allowing users to search for dishes, view recipe details, and save favorites for later.  
+Recipe Reader is a simple yet visually appealing recipe search application built using **JavaScript, HTML, and CSS**. It fetches recipes from the **MealDB API**, allowing users to search for dishes, view recipe details, and save favorites for later.  
 
 # Features  
 - Search for recipes by ingredient or dish name  
